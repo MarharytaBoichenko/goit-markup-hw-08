@@ -1,0 +1,31 @@
+.footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer-box {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer__address-section {
+  text-align: center;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+    text-align: left;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.address-join-wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}

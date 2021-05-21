@@ -1,0 +1,24 @@
+.join-section {
+  text-align: center;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+}
+
+.join-section__link {
+  background-color: var(--join-link-cl);
+}
+
+.join-section__icon {
+  fill: var(--second-accent-color);
+}
+.join-section__text {
+  @extend %join-subscribe-text;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}

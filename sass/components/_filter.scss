@@ -1,0 +1,23 @@
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  justify-content: start;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+}
+
+.filter__item {
+  @include font(16px, 1.88);
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}

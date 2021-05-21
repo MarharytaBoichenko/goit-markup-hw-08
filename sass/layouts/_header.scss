@@ -1,0 +1,38 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--header-border-color);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.header__main-nav {
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+}
+
+.header__nav {
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
+.header__contacts {
+  // margin-left: auto;
+
+  @media screen and (mi-width: 1200px) {
+    margin-left: 0;
+  }
+}

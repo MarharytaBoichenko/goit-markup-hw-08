@@ -1,0 +1,81 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+}
+
+.form__thumb {
+  margin-bottom: 30px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.form__input {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form__text {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.form__icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  @include position(11px, 12px);
+  fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__text--input,
+.form__field--comment {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form__field--comment {
+  margin-bottom: 20px;
+}
+
+.form__text--input {
+  height: 40px;
+  padding-left: 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__text--input:focus,
+.form__field--comment:focus {
+  border-color: var(--first-accent-color);
+  outline: 1px solid var(--first-accent-color);
+}
+
+.form__text--input:focus-within + .form__icon {
+  fill: var(--first-accent-color);
+}
+
+.form__field--comment {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+}
+
+.form__send-btn {
+  @extend %button;
+  text-align: center;
+}

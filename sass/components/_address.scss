@@ -1,0 +1,21 @@
+.address {
+  font-style: normal;
+}
+
+.address__place {
+  margin-bottom: 9px;
+  color: var(--second-accent-color);
+}
+
+.address__link {
+  color: var(--footer-contacts-color);
+
+  &:hover,
+  &:focus {
+    color: var(--first-accent-color);
+  }
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
