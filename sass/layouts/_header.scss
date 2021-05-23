@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid var(--header-border-color);
@@ -24,15 +25,19 @@
 }
 
 .header__nav {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
 }
 
 .header__contacts {
-  // margin-left: auto;
-
-  @media screen and (mi-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 0;
   }
 }

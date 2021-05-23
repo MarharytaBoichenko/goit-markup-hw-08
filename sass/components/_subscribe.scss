@@ -4,7 +4,7 @@
 }
 
 .subscribe__btn {
-  display: inline-block;
+  display: flex;
   align-items: center;
   margin-right: auto;
   margin-left: auto;
@@ -39,6 +39,7 @@
 .subscribe__input {
   width: 100%;
   display: block;
+  margin: 0 auto;
   margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
