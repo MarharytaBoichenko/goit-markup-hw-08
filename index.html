@@ -219,12 +219,26 @@
           <ul class="list flex-list">
             <li class="works__item item">
               <div class="works__thumb">
-                <img
-                  src="./images/box1.jpeg"
-                  alt="Нотбук"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/what-we-do/box1.webp 1x,
+                      ./images/desktop/what-we-do/box1.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <!-- <source
+                    srcset="./images/tablet/ 1x, photo@2x.jpg 2x"
+                    type="image/jpeg"
+                  /> -->
+                  <img
+                    src="./images/desktop/what-we-do/box1.jpg"
+                    alt="Нотбук"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
 
                 <p class="works__text">Десктопные приложения</p>
               </div>
