@@ -915,8 +915,8 @@ img {
       linear,
       left top,
       left bottom,
-      from(rgba(47, 48, 58, 0.4)),
-      to(rgba(47, 48, 58, 0.4))
+      from (rgba(47, 48, 58, 0.4)),
+      to (rgba(47, 48, 58, 0.4))
     ),
     url('../images/background.jpeg');
   background-image: linear-gradient(
