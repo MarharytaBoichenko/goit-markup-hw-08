@@ -66,8 +66,8 @@
 .form__text--input:focus,
 .form__field--comment:focus {
   border-color: var(--first-accent-color);
-  // outline: 1px solid var(--first-accent-color);
-  outline: none;
+  outline: var(--first-accent-color);
+  // outline: none;
 }
 
 .form__text--input:focus-within + .form__icon {

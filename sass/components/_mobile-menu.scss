@@ -12,7 +12,6 @@
 
   padding: 48px 40px;
   z-index: 1;
-  // overflow: scroll;
 
   background-color: var(--second-accent-color);
 
@@ -23,10 +22,17 @@
   &.is-open {
     opacity: 1;
     pointer-events: auto;
+    overflow: hidden;
+    overflow-y: scroll;
   }
 
   @media screen and (min-width: 768px) {
     display: none;
+  }
+}
+.menu-is-open {
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
   }
 }
 .mobile-menu__contacts {
@@ -95,7 +101,7 @@
   display: block;
   margin-bottom: 32px;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1.18;
   letter-spacing: 0.02em;
 
@@ -122,9 +128,11 @@
   flex-wrap: wrap;
   margin-top: -10px;
   margin-left: -10px;
+  // align-items: center;
 }
 
 .mobile-menu__socials-item {
+  display: flex;
   margin-top: 10px;
   margin-left: 10px;
 }
@@ -142,7 +150,9 @@
   content: '';
   display: inline-block;
   width: 1px;
-  height: 21px;
+  top: 0;
+  left: 0;
+  height: 100%;
   background-color: rgba(33, 33, 33, 0.2);
   margin-left: 10px;
 }
