@@ -12,7 +12,7 @@
 
   padding: 48px 40px;
   z-index: 1;
-  overflow: scroll;
+  // overflow: scroll;
 
   background-color: var(--second-accent-color);
 
@@ -115,11 +115,18 @@
 
 .mobile-menu__socials {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.mobile-menu__socials-item {
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .mobile-menu__socials-link {
-  display: block;
-  padding-right: 10px;
+  display: inline-block;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -127,10 +134,19 @@
   color: var(--first-accent-color);
 }
 
-.mobile-menu__socials-item:not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-.mobile-menu__socials-item:not(:first-child) {
+.mobile-menu__socials-item:not(:last-child)::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 21px;
+  background-color: rgba(33, 33, 33, 0.2);
   margin-left: 10px;
 }
+
+// .mobile-menu__socials-item:not(:last-child) {
+//   border-right: 1px solid rgba(33, 33, 33, 0.2);
+// }
+
+// .mobile-menu__socials-item:not(:first-child) {
+//   margin-left: 10px;
+// }
