@@ -67,7 +67,6 @@
 .form__field--comment:focus {
   border-color: var(--first-accent-color);
   outline: var(--first-accent-color);
-  // outline: none;
 }
 
 .form__text--input:focus-within + .form__icon {
