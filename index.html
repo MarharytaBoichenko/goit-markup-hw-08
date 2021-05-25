@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body data-menu-page>
     <!--Шапка -->
     <header class="header">
       <div class="container header__main-nav">
@@ -984,7 +984,7 @@
                 placeholder=" "
                 id="email"
               />
-              <svg class="form__icon mom">
+              <svg class="form__icon">
                 <use href="./images/icon/sprite.svg#email"></use>
               </svg>
             </div>
@@ -1006,9 +1006,9 @@
               />
               <span class="checkbox__icon"></span>
               <span class="checkbox__text"
-                >Соглашаюсь с рассылкой и принимаю</span
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="" class="checkbox__link">Условия договора</a></span
               >
-              <a href="" class="checkbox__link">Условия договора</a>
             </label>
           </div>
           <button type="submit" class="button form__send-btn">Отправить</button>
