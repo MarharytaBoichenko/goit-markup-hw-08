@@ -27,6 +27,9 @@
 .feature__thumb {
   @extend %flex;
 
+  padding-top: 25px;
+  padding-bottom: 25px;
+
   margin-bottom: 30px;
   width: 100%;
   height: auto;
